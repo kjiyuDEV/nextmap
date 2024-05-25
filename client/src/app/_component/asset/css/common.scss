@@ -1,0 +1,158 @@
+// 별
+.starBox {
+    z-index: 1000;
+    // margin-left: 55px;
+    // margin-right: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    // left: 0;
+    .pointOfStar {
+        z-index: 10;
+        width: 100px;
+    }
+}
+.backgroundStar {
+    position: absolute;
+    top: 0;
+    // left: 0;
+    // margin-left: 84px;
+    width: 100px;
+}
+
+.main-wrap {
+    background: rgb(230, 230, 230);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn {
+    border: none;
+    background: none;
+}
+
+.modal-wrap {
+    // border: solid 2px blue;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .modal {
+        width: 22rem;
+        position: relative;
+        overflow: scroll;
+        background: white;
+        @media only screen and (min-width: 377px) {
+            height: 80%;
+        }
+        @media only screen and (max-width: 376px) {
+            height: 90%;
+        }
+        .close-btn-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            height: 3rem;
+            padding: 0rem 1rem;
+            position: absolute;
+            right: 0%;
+        }
+        .title {
+            font-size: 21px;
+            text-align: left;
+            font-weight: 800;
+            padding: 0.2rem 1rem;
+            @media only screen and (min-width: 377px) {
+                margin-top: 40px;
+            }
+            @media only screen and (max-width: 376px) {
+                margin-top: 15px;
+            }
+        }
+        .content-wrap {
+            position: relative;
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            font-size: 13px;
+            padding: 0.7rem;
+            > div {
+                margin: 5px 0;
+            }
+            .address {
+                font-size: 11px;
+            }
+            .rate-type {
+                display: flex;
+                align-items: center;
+                .rating {
+                    height: 100%;
+
+                    margin-left: 3.5px;
+                    font-size: 11px;
+                }
+            }
+            .open-data {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-self: center;
+                .open {
+                    font-weight: 800;
+                    font-size: 15px;
+                    color: black;
+                }
+                .close {
+                    font-weight: 800;
+                    font-size: 15px;
+                    color: red;
+                }
+                .open-description {
+                    font-size: 13px;
+                    margin-top: 5px;
+                    text-align: center;
+                    li {
+                        margin-bottom: 3px;
+                        font-size: 11px;
+                    }
+                    .on {
+                        font-weight: 800;
+                        background-color: yellow;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .open-data-null {
+                font-size: 11px;
+                text-align: center;
+            }
+        }
+
+        .recommend {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            span {
+                font-weight: 800;
+            }
+            .comment {
+                margin-top: 5px;
+            }
+            button {
+                margin: 20px;
+                padding: 10px;
+            }
+        }
+    }
+}
