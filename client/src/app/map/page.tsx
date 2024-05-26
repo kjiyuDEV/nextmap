@@ -31,6 +31,7 @@ const GoogleMapsComponent = () => {
         };
     }, []);
 
+    console.log('check');
     // 지도 초기화
     const initMap = () => {
         const spots = [
